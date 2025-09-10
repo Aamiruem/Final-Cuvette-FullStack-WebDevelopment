@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Reference</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .tag-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .tag {
+            padding: 8px;
+            border-radius: 4px;
+            background: #f8f9fa;
+        }
+        .deprecated {
+            background: #fff3cd;
+            position: relative;
+        }
+        .deprecated::after {
+            content: "Deprecated";
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            font-size: 0.7em;
+            background: #ffc107;
+            color: #000;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .experimental {
+            background: #d1ecf1;
+            position: relative;
+        }
+        .experimental::after {
+            content: "Experimental";
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            font-size: 0.7em;
+            background: #0dcaf0;
+            color: #000;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .new {
+            background: #d1ecf1;
+            position: relative;
+        }
+        .new::after {
+            content: "New";
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            font-size: 0.7em;
+            background: #0dcaf0;
+            color: #000;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+
+        .deprecated::after  {
+            content: "Deprecated";
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            font-size: 0.7em;
+            background: #ffc107;
+            color: #000;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Tags Reference</h1>
+    
+    <h2>Standard HTML Tags</h2>
+    <div class="tag-list">
+        <div class="tag"><code>&lt;a&gt;</code></div>
+        <div class="tag"><code>&lt;abbr&gt;</code></div>
+        <div class="tag"><code>&lt;address&gt;</code></div>
+        <div class="tag"><code>&lt;area&gt;</code></div>
+        <div class="tag"><code>&lt;article&gt;</code></div>
+        <div class="tag"><code>&lt;aside&gt;</code></div>
+        <div class="tag"><code>&lt;audio&gt;</code></div>
+        <div class="tag"><code>&lt;b&gt;</code></div>
+        <div class="tag"><code>&lt;base&gt;</code></div>
+        <div class="tag"><code>&lt;bdi&gt;</code></div>
+        <div class="tag"><code>&lt;bdo&gt;</code></div>
+        <div class="tag"><code>&lt;blockquote&gt;</code></div>
+        <div class="tag"><code>&lt;body&gt;</code></div>
+        <div class="tag"><code>&lt;br&gt;</code></div>
+        <div class="tag"><code>&lt;button&gt;</code></div>
+        <div class="tag"><code>&lt;canvas&gt;</code></div>
+        <div class="tag"><code>&lt;caption&gt;</code></div>
+        <div class="tag"><code>&lt;cite&gt;</code></div>
+        <div class="tag"><code>&lt;code&gt;</code></div>
+        <div class="tag"><code>&lt;col&gt;</code></div>
+        <div class="tag"><code>&lt;colgroup&gt;</code></div>
+        <div class="tag"><code>&lt;data&gt;</code></div>
+        <div class="tag"><code>&lt;datalist&gt;</code></div>
+        <div class="tag"><code>&lt;dd&gt;</code></div>
+        <div class="tag"><code>&lt;del&gt;</code></div>
+        <div class="tag"><code>&lt;details&gt;</code></div>
+        <div class="tag"><code>&lt;dfn&gt;</code></div>
+        <div class="tag"><code>&lt;dialog&gt;</code></div>
+        <div class="tag"><code>&lt;div&gt;</code></div>
+        <div class="tag"><code>&lt;dl&gt;</code></div>
+        <div class="tag"><code>&lt;dt&gt;</code></div>
+        <div class="tag"><code>&lt;em&gt;</code></div>
+        <div class="tag"><code>&lt;embed&gt;</code></div>
+        <div class="tag"><code>&lt;fieldset&gt;</code></div>
+        <div class="tag"><code>&lt;figcaption&gt;</code></div>
+        <div class="tag"><code>&lt;figure&gt;</code></div>
+        <div class="tag"><code>&lt;footer&gt;</code></div>
+        <div class="tag"><code>&lt;form&gt;</code></div>
+        <div class="tag"><code>&lt;h1&gt;</code></div>
+        <div class="tag"><code>&lt;head&gt;</code></div>
+        <div class="tag"><code>&lt;header&gt;</code></div>
+        <div class="tag"><code>&lt;hgroup&gt;</code></div>
+        <div class="tag"><code>&lt;hr&gt;</code></div>
+        <div class="tag"><code>&lt;html&gt;</code></div>
+        <div class="tag"><code>&lt;i&gt;</code></div>
+        <div class="tag"><code>&lt;iframe&gt;</code></div>
+        <div class="tag"><code>&lt;img&gt;</code></div>
+        <div class="tag"><code>&lt;input&gt;</code></div>
+        <div class="tag"><code>&lt;ins&gt;</code></div>
+        <div class="tag"><code>&lt;kbd&gt;</code></div>
+        <div class="tag"><code>&lt;label&gt;</code></div>
+        <div class="tag"><code>&lt;legend&gt;</code></div>
+        <div class="tag"><code>&lt;li&gt;</code></div>
+        <div class="tag"><code>&lt;link&gt;</code></div>
+        <div class="tag"><code>&lt;main&gt;</code></div>
+        <div class="tag"><code>&lt;map&gt;</code></div>
+        <div class="tag"><code>&lt;mark&gt;</code></div>
+        <div class="tag"><code>&lt;menu&gt;</code></div>
+        <div class="tag"><code>&lt;meta&gt;</code></div>
+        <div class="tag"><code>&lt;meter&gt;</code></div>
+        <div class="tag"><code>&lt;nav&gt;</code></div>
+        <div class="tag"><code>&lt;noscript&gt;</code></div>
+        <div class="tag"><code>&lt;object&gt;</code></div>
+        <div class="tag"><code>&lt;ol&gt;</code></div>
+        <div class="tag"><code>&lt;optgroup&gt;</code></div>
+        <div class="tag"><code>&lt;option&gt;</code></div>
+        <div class="tag"><code>&lt;output&gt;</code></div>
+        <div class="tag"><code>&lt;p&gt;</code></div>
+        <div class="tag"><code>&lt;picture&gt;</code></div>
+        <div class="tag"><code>&lt;pre&gt;</code></div>
+        <div class="tag"><code>&lt;progress&gt;</code></div>
+        <div class="tag"><code>&lt;q&gt;</code></div>
+        <div class="tag"><code>&lt;rp&gt;</code></div>
+        <div class="tag"><code>&lt;rt&gt;</code></div>
+        <div class="tag"><code>&lt;ruby&gt;</code></div>
+        <div class="tag"><code>&lt;s&gt;</code></div>
+        <div class="tag"><code>&lt;samp&gt;</code></div>
+        <div class="tag"><code>&lt;script&gt;</code></div>
+        <div class="tag"><code>&lt;search&gt;</code></div>
+        <div class="tag"><code>&lt;section&gt;</code></div>
+        <div class="tag"><code>&lt;select&gt;</code></div>
+        <div class="tag"><code>&lt;slot&gt;</code></div>
+        <div class="tag"><code>&lt;small&gt;</code></div>
+        <div class="tag"><code>&lt;source&gt;</code></div>
+        <div class="tag"><code>&lt;span&gt;</code></div>
+        <div class="tag"><code>&lt;strong&gt;</code></div>
+        <div class="tag"><code>&lt;style&gt;</code></div>
+        <div class="tag"><code>&lt;sub&gt;</code></div>
+        <div class="tag"><code>&lt;summary&gt;</code></div>
+        <div class="tag"><code>&lt;sup&gt;</code></div>
+        <div class="tag"><code>&lt;table&gt;</code></div>
+        <div class="tag"><code>&lt;tbody&gt;</code></div>
+        <div class="tag"><code>&lt;td&gt;</code></div>
+        <div class="tag"><code>&lt;template&gt;</code></div>
+        <div class="tag"><code>&lt;textarea&gt;</code></div>
+        <div class="tag"><code>&lt;tfoot&gt;</code></div>
+        <div class="tag"><code>&lt;th&gt;</code></div>
+        <div class="tag"><code>&lt;thead&gt;</code></div>
+        <div class="tag"><code>&lt;time&gt;</code></div>
+        <div class="tag"><code>&lt;title&gt;</code></div>
+        <div class="tag"><code>&lt;tr&gt;</code></div>
+        <div class="tag"><code>&lt;track&gt;</code></div>
+        <div class="tag"><code>&lt;u&gt;</code></div>
+        <div class="tag"><code>&lt;ul&gt;</code></div>
+        <div class="tag"><code>&lt;var&gt;</code></div>
+        <div class="tag"><code>&lt;video&gt;</code></div>
+        <div class="tag"><code>&lt;wbr&gt;</code></div>
+    </div>
+
+    <h2>Deprecated HTML Tags</h2>
+    <div class="tag-list">
+        <div class="tag deprecated"><code>&lt;acronym&gt;</code></div>
+        <div class="tag deprecated"><code>&lt;big&gt;</code></div>
+        <div class="tag deprecated"><code>&lt;center&gt;</code></div>
+        <div class="tag deprecated"><code>&lt;dir&gt;</code></div>
+        <div class="tag deprecated"><code>&lt;font&gt;</code></div>
+        <div class="tag deprecated"><code>&lt;frame&gt;</code></div>
+        <div class="tag deprecated"><code>&lt;frameset&gt;</code></div>
+        <div class="tag deprecated"><code>&lt;marquee&gt;</code></div>
+        <div class="tag deprecated"><code>&lt;nobr&gt;</code></div>
+        <div class="tag deprecated"><code>&lt;noembed&gt;</code></div>
+        <div class="tag deprecated"><code>&lt;noframes&gt;</code></div>
+        <div class="tag deprecated"><code>&lt;param&gt;</code></div>
+        <div class="tag deprecated"><code>&lt;plaintext&gt;</code></div>
+        <div class="tag deprecated"><code>&lt;rb&gt;</code></div>
+        <div class="tag deprecated"><code>&lt;rtc&gt;</code></div>
+        <div class="tag deprecated"><code>&lt;strike&gt;</code></div>
+        <div class="tag deprecated"><code>&lt;tt&gt;</code></div>
+        <div class="tag deprecated"><code>&lt;xmp&gt;</code></div>
+    </div>
+
+    <h2>Experimental HTML Tags</h2>
+    <div class="tag-list">
+        <div class="tag experimental"><code>&lt;fencedframe&gt;</code></div>
+        <div class="tag experimental"><code>&lt;selectedcontent&gt;</code></div>
+    </div>
+
+    <footer>
+        <p>Note: Deprecated tags should not be used in new projects. Experimental tags may change or be removed in future browser versions.</p>
+    </footer>
+</body>
+</html>
